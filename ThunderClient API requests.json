@@ -1,0 +1,112 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Infoware Assignment",
+    "dateExported": "2023-04-14T16:27:40.478Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "25e90ae2-2edc-4d5d-b5c3-c552952e651c",
+            "colId": "a10f0088-4f10-4382-8c9b-5699af5fedce",
+            "containerId": "",
+            "name": "POST/ addEmployeeDetails",
+            "url": "http://localhost:8000/addemployee",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-14T10:49:11.635Z",
+            "modified": "2023-04-14T14:20:35.600Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Empid\": 10,\n  \"EmpName\": \"Yaksh\",\n  \"JobTitle\": \"CEO\",\n  \"PhoneNumber\": 7016104220,\n  \"Email\": \"om@om.com\",\n  \"Address\": \"abc\",\n  \"City\": \"def\",\n  \"State\": \"ghi\",\n  \"PrimaryEmergencyContact\": \"Dad\",\n  \"PECPhoneNumber\": 7016104330,\n  \"PECRelationship\": \"Father\",\n  \"SecondaryEmergencyContact\": \"Mom\",\n  \"SECPhoneNumber\": 7016104440,\n  \"SECRelationship\": \"Mother\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a2cfa3e5-6c58-4e97-a1db-f05d0d918949",
+            "colId": "a10f0088-4f10-4382-8c9b-5699af5fedce",
+            "containerId": "",
+            "name": "GET/ EmployeeById",
+            "url": "http://localhost:8000/getemployeebyid",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-14T10:56:21.039Z",
+            "modified": "2023-04-14T11:31:43.362Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Empid\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f5677948-65a0-448b-8e9c-ca0c7f06f602",
+            "colId": "a10f0088-4f10-4382-8c9b-5699af5fedce",
+            "containerId": "",
+            "name": "GET/ AllEmployees",
+            "url": "http://localhost:8000/getallemp",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-04-14T10:59:14.300Z",
+            "modified": "2023-04-14T16:25:58.867Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "offset",
+                    "value": "1",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "1",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "70398b3a-2d9a-418c-ae24-dd1d4dbaa50c",
+            "colId": "a10f0088-4f10-4382-8c9b-5699af5fedce",
+            "containerId": "",
+            "name": "DELETE/ deleteEmployeeWithId",
+            "url": "http://localhost:8000/deleteemployee",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-04-14T11:43:05.232Z",
+            "modified": "2023-04-14T13:33:30.626Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Empid\": 3\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c40c75a3-ddc0-44f8-8ac6-b61f914bbe94",
+            "colId": "a10f0088-4f10-4382-8c9b-5699af5fedce",
+            "containerId": "",
+            "name": "UPDATE/ UpdateEmployeeDetails",
+            "url": "http://localhost:8000/updateemployee",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-04-14T13:50:11.178Z",
+            "modified": "2023-04-14T14:01:43.905Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Empid\": 1,\n  \"EmpName\": \"pathik\",\n  \"Email\": \"pathik@pathik.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
